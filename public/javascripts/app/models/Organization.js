@@ -1,4 +1,3 @@
-
 senchamvc.models.Organization = new Ext.regModel('senchamvc.models.Organization', {
   fields: [
     {name: 'id' , type: 'int'},

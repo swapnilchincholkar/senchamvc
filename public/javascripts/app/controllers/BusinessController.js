@@ -1,10 +1,6 @@
 Ext.regController('Business',{
 
   init: function(options) {
-    var store = Ext.getStore('localBusinesses');
-    store.getProxy().clear();
-    store.data.clear();
-    store.sync();
     senchamvc.stores.remoteBusinesses.load();
     senchamvc.stores.localBusinesses.load();
   },

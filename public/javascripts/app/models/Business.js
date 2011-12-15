@@ -2,10 +2,7 @@ senchamvc.models.Business = new Ext.regModel('senchamvc.models.Business', {
 
   fields: [
     {name: 'id' , type: 'int'},
-    {name: 'remote_id', type: 'int'},
-    {name: 'synced', type: 'boolean'},
     {name: 'name', type: 'string'},
-    {name: 'contact_name', type: 'string'},
     {name: 'address', type: 'string'}
   ]
 });

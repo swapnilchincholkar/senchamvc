@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  helper :all
+ helper :all
   protect_from_forgery
 
   def mobile_device?
