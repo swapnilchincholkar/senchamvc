@@ -1,0 +1,21 @@
+%h1 Listing businesses
+
+%table
+  %tr
+    %th Name
+    %th Address
+    %th
+    %th
+    %th
+
+  - @businesses.each do |business|
+    %tr
+      %td= business.name
+      %td= business.address
+      %td= link_to 'Show', business
+      %td= link_to 'Edit', edit_business_path(business)
+      %td= link_to 'Destroy', business, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Business', new_business_path

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Senchamvc</title>
+    <%= csrf_meta_tag %>
+    <% if mobile_device? %>
+      <!-- Javascripts for mobile applications -->
+      <%= stylesheet_link_tag 'sencha-touch' %>
+      <%= javascript_include_tag 'sencha-touch-1.1.1/sencha-touch' %>
+
+      <%= javascript_include_tag 'app/app' %>
+      <%= javascript_include_tag 'app/routes' %>
+      <%= javascript_include_tag 'app/views/Viewport' %>
+      <%= javascript_include_tag 'app/views/TabBarMvc' %>
+
+      <%= javascript_include_tag 'app/models/Business' %>
+      <%= javascript_include_tag 'app/models/Organization' %>
+      <%= javascript_include_tag 'app/controllers/BusinessController' %>
+      <%= javascript_include_tag 'app/controllers/OrganizationController' %>
+      <%= javascript_include_tag 'app/views/business/BusinessIndexView' %>
+      <%= javascript_include_tag 'app/views/business/BusinessShowView' %>
+      <%= javascript_include_tag 'app/views/organization/OrganizationIndexView' %>
+
+    </head>
+    <body>
+    </body>
+  </html>
+
+<% else %>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>
+    <% end %>
