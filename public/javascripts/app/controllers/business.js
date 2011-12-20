@@ -5,6 +5,17 @@ Ext.regController('Business',{
     senchamvc.stores.localBusinesses.load();
   },
 
+  /*index: function(options) {
+    senchamvc.stores.localBusinesses.load();
+    if (! this.indexView)
+    {
+        this.indexView = this.render({
+          xtype: 'BusinessIndex',
+        });
+    }
+    senchamvc.views.viewport.setActiveItem(this.indexView, options.animation);
+  },*/
+
   index: function(options) {
     senchamvc.stores.localBusinesses.load();
     if (! this.indexView)

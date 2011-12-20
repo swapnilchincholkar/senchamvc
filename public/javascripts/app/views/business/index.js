@@ -32,7 +32,6 @@ senchamvc.views.BusinessIndex = Ext.extend(Ext.Panel, {
        '</tpl>'
     ),
     onItemDisclosure: function(record){
-      //Ext.redirect('Business/show'+record.getId(););
       Ext.dispatch({
         controller: 'Business',
         action: 'show',
@@ -42,7 +41,6 @@ senchamvc.views.BusinessIndex = Ext.extend(Ext.Panel, {
     },
     onItemTap: function(item) {
       record = this.getRecord(item);
-      //Ext.redirect('Business/show'+record.getId(););
       Ext.dispatch({
         controller: 'Business',
         action: 'show',

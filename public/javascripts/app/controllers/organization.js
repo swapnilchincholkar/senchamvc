@@ -1,10 +1,6 @@
 Ext.regController('Organization',{
 
   init: function(options) {
-    var store = Ext.getStore('localOrganizations');
-    store.getProxy().clear();
-    store.data.clear();
-    store.sync();
     senchamvc.stores.remoteOrganizations.load();
     senchamvc.stores.localOrganizations.load();
   },
