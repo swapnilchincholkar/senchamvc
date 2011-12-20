@@ -8,9 +8,8 @@ senchamvc.views.BusinessShow = Ext.extend(Ext.Panel, {
       text: 'Back',
       ui: 'back',
       handler: function() {
-          //Ext.redirect('Business/index');
         Ext.dispatch({
-          controller: 'Business',
+          controller: 'business',
           action: 'index',
           animation: {type: 'slide', direction: 'left'}
         });

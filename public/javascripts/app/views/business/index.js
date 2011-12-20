@@ -36,7 +36,7 @@ senchamvc.views.BusinessIndex = Ext.extend(Ext.Panel, {
     onItemTap: function(item) {
       record = this.getRecord(item);
       Ext.dispatch({
-        controller: 'Business',
+        controller: 'business',
         action: 'show',
         id: record.getId(),
         animation: {type: 'slide', direction: 'left'}
