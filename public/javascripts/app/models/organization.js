@@ -1,4 +1,4 @@
-senchamvc.models.Organization = new Ext.regModel('senchamvc.models.Organization', {
+senchamvc.models.Organization = new Ext.regModel('Organization', {
   fields: [
     {name: 'id' , type: 'int'},
     {name: 'remote_id', type: 'int'},
@@ -9,7 +9,7 @@ senchamvc.models.Organization = new Ext.regModel('senchamvc.models.Organization'
   
 senchamvc.stores.remoteOrganizations = new Ext.data.Store({
   id: 'remoteOrganizations',
-  model: 'senchamvc.models.Business',
+  model: 'Organization',
   proxy: {
     type: 'ajax',
     url: 'http://192.168.1.159:3000/organizations.json',
@@ -28,7 +28,7 @@ senchamvc.stores.remoteOrganizations = new Ext.data.Store({
 
 senchamvc.stores.localOrganizations = new Ext.data.Store({
   id: 'localOrganizations',
-  model: 'senchamvc.models.Business',
+  model: 'Organization',
   proxy: {
     type: 'localstorage',
     id: 'organizations'
