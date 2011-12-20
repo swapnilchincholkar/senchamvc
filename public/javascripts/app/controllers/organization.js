@@ -1,4 +1,4 @@
-Ext.regController('Organization',{
+Ext.regController('organization',{
 
   init: function(options) {
     senchamvc.stores.remoteOrganizations.load();

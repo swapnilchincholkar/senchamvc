@@ -9,12 +9,12 @@ senchamvc.views.Viewport = Ext.extend(Ext.Panel, {
        {
         text: 'Businesses',
         iconCls: 'home',
-        route: 'Business/index'
+        route: 'business/index'
        },
        {
-        text: 'Causes',
+        text: 'Organizations',
         iconCls: 'info',
-        route: 'Organization/index'
+        route: 'organization/index'
        },
      ],
     },

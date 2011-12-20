@@ -1,6 +1,6 @@
 new Ext.Application({
   name: 'senchamvc',
-  defaultUrl: 'Business/index',
+  defaultUrl: 'business/index',
   launch: function() {
     this.views.viewport = new senchamvc.views.Viewport();
   }
