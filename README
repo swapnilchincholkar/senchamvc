@@ -7,12 +7,12 @@ rake db:seed
 Then update url in public/javascripts/app/models/Businesss.js and in public/javascripts/app/models/Organization.js from
 url: 'http://192.168.1.159:3000/businesses.json',
 to 
-url: 'http://<your IP address>:3000/businesses.json'
+url: 'http://<your IP address>:3000/businesses.json'.
 
 Then after executing
 rails s
 
-Open the url as http://<your IP address>:3000/ in browser of mobile phone or Sarafri browser.
+Open the url as http://<your IP address>:3000/ in browser of mobile phone or Safari browser.
 
 If you are using Safari the set the user agent to iphone, To change the User agent in Safari, you can go to
 Menu -> Develop -> User Agent and set the one you need. 
