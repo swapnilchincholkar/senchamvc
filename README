@@ -1,5 +1,5 @@
 This repository is example application to demonstrate how to intgrate Sencha touch application with ruby on rails application.
-After cloning repository run 
+After cloning repository run
 rake db:create
 rake db:migrate
 rake db:seed
@@ -7,7 +7,7 @@ rake db:seed
 Then update url in public/javascripts/app/models/Businesss.js and in public/javascripts/app/models/Organization.js from
 url: 'http://192.168.1.159:3000/businesses.json',
 to 
-url: 'http://<your IP address>:3000/businesses.json',
+url: 'http://<your IP address>:3000/businesses.json'
 
 Then after executing
 rails s
