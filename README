@@ -7,7 +7,7 @@ rake db:seed
 Then update url in public/javascripts/app/models/Businesss.js and in public/javascripts/app/models/Organization.js from
 url: 'http://192.168.1.159:3000/businesses.json',
 to 
-url: 'http://<your IP address>:3000/businesses.json'.
+url: 'http://<your IP address>:3000/businesses.json'
 
 Then after executing
 rails s
